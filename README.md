@@ -1,11 +1,11 @@
 ![veeam1](./images/veeam1.jpg)
 #  Veeam Hands-on Lab for Microsoft Azure
 ## Deploy Veeam VM
-1. After login in to the azure portal in the Search bar search for **Veeam Backup for Microsoft Azure Free Edition** and click on **Veeam Backup for Microsoft Azure Free Edition**
+1. After you login in to the Azure portal, in the search bar type **Veeam Backup for Microsoft Azure Free Edition** and click on **Veeam Backup for Microsoft Azure Free Edition**.
 ![veeam127](./images/veeam127.jpg)
-2. Click on **Create**
+2. Click on the **Create** button.
 ![veeam128](./images/veeam128.jpg)
-3. Enter the details for virtual machine
+3. Enter the details for the virtual machine.
    `````
    Resource Group: Veeam
    Virtual machine name: Veeam
@@ -16,275 +16,275 @@
    
    `````
 ![veeam104](./images/veeam104.jpg)
-4. Click on **Review+Create** and Click on **Create**
+4. Click on **Review+Create** and Click on **Create**.
 ![veeam105](./images/veeam105.jpg)
-5. Make sure that deployment is **Success**
+5. Make sure that **Your deployment is complete**.
 ![veeam106](./images/veeam106.jpg)
-6. Once the deployment is success click on **go to resource** or click on serarch bar and search for the **Virtual machine**
+6. Once the deployment is successful, click on **go to resource** or click on the search bar and type **Virtual machine**.
 ![veeam107](./images/veeam107.jpg)     
-7. Select the virtual machine with the name **Veeam**
+7. Select the virtual machine with the name **Veeam**.
 ![veeam108](./images/veeam108.jpg)
-8. Select the Overview and copy **Public IP Address**
+8. Select the Overview and copy **Public IP Address**.
 ![veeam109](./images/veeam109.jpg)
 
 ## Login to Veeam VM
-1. Open the new browser and paste the value copied below and replace the **IPADDRESS** with the Veeam VM IP address
+1. Open the new browser and paste the value copied below and replace the **IPADDRESS** with the Veeam VM IP address.
   `````
   https://IPADDRESS
   `````
 ![veeam2](./images/veeam2.jpg)
-2. Click on the **advance**
+2. Click on the **advance**.
 ![veeam3](./images/veeam3.jpg)
-3. Click on the **click on processed to IP**
+3. Click on the **click on processed to IP**.
 ![veeam4](./images/veeam4.jpg)
-4. Enter the **demouser** for username and **Password.1!!** for Password and click on Login
+4. Enter **demouser** as the username and use **Password.1!!** for password and click on **Login**.
 ![veeam5](./images/veeam5.jpg)
-5. Check all the **check boxes** in the licence agreement and click on **Accept** and login into the VM
+5. Check all the **check boxes** in the license agreement and click on **Accept** and login into the VM.
 ![veeam6](./images/veeam6.jpg)
 
-## Add a Microsoft azure account
-1. Click on **Add a Microsoft Azure Account First**
+## Add a Microsoft Azure account
+1. Click on **Add a Microsoft Azure Account First**.
 ![veeam7](./images/veeam7.jpg)
-2. Click on **Add**
+2. Click on **+ Add**.
 ![veeam8](./images/Veeam8.jpg)
-3. Enter the **Name**, **Description** and click on the **Next**
+3. Enter the **Name**, **Description** and click on the **Next**.
 ![veeam9](./images/veeam9.jpg)
-4. In the **Service Account Type** click on **Specify the exisiting service account**
+4. In the **Service Account Type** click on **Specify existing service account**.
 ![veeam10](./images/veeam10.jpg)
-5. Copy the **TenantID**, **Application ID** and **Secret key** of service principal from environment details Tab
+5. Copy the **TenantID**, **Application ID**, and the **Secret key** of the service principal from the environment details tab.
 ![veeam11](./images/veeam11.jpg)
-6. Paste the Copied values in the respective fields and click **Next**
+6. Paste the copied values in the respective fields and click **Next**.
 ![veeam12](./images/veeam12.jpg)
-7. Move to the **Summary** and click **Finish** to setup the microsoft account
+7. Move to the **Summary** and click **Finish** to set up the Microsoft account.
 ![veeam13](./images/veeam13.jpg)
 
 ## Add the Workers to Workspace
-1. Go to **Getting Started page** and click on **Review workers configuration**
+1. Go to the **Getting Started** page and click on **Review workers configuration**.
 ![veeam14](./images/veeam14.jpg)
-2. Click on **+Add**
+2. Click on **+ Add**.
 ![veeam15](./images/veeam15.jpg)
-3. Click on **region** and select the region of the resource group and **Apply** and Click **Next**
+3. Click on **region** and select the region of the resource group and **Apply** and Click **Next**.
 ![veeam16](./images/veeam16.jpg)
-4. Select the **Virtual Network**, **Subnet** and **Network security Group** and **Next**
+4. Select the **Virtual Network**, **Subnet** and **Network security Group** and **Next**.
 ![veeam18](./images/veeam18.jpg)
-5. Click on **Finish**
+5. Click on **Finish**.
 ![veeam19](./images/veeam19.jpg)
-6. Click on **profile** and **+Add**
+6. Click on **Profile** and **+ Add**.
 ![veeam20](./images/veeam20.jpg)
-7. Select the **Region**, select the proper region and click on **add** and click on **Next**
+7. Select the correct **Region** and click on **add**, then click on **Next**.
 ![veeam21](./images/veeam21.jpg)
-8. Move to the **worker profile** and click **Next**
+8. Move to the **worker profile** and click **Next**.
 ![veeam22](./images/veeam22.jpg)
-9. Go to **summary** and click **Finish**
+9. Go to **Summary** and click **Finish**.
 ![veeam23](./images/veeam23.jpg)
-10. Move to **Instance** tab and verify instance is created if it is still in creating state wait till it move to **created** state
+10. Move to the **Instance** tab and verify if the instance has been created. If it is still in creating state wait till it moves to **created** state.
 ![veeam24](./images/veeam24.jpg)
 
 ## Add the repository
-1. Move to **Getting Started** page and click on **Add repository**
+1. Move to the **Getting Started** page and click on **Add repository**.
 ![veeam25](./images/veeam25.jpg)
-2. Click on **+Add**
+2. Click on **+ Add**.
 ![veeam26](./images/veeam26.jpg)
-3. Enter the **Name** and **Description** and Click **Next**
+3. Enter the **Name** and **Description** and click on **Next**.
 ![veeam27](./images/veeam27.jpg)
-4. Select the **storage account**, **Continer** and create the **NewFolder** and **Next**
+4. Select the **Storage account**, **Container**, **Create new folder**, and click on **Next**.
 ![veeam28](./images/veeam28.jpg)
-5. Select the **Option** and click **Next**
+5. Select **Options** and click on **Next**.
 ![veeam28](./images/veeam29.jpg)
-6. Click on **Summary** and **Finish**
+6. Click on **Summary** and **Finish**.
 ![veeam30](./images/veeam30.jpg)
-7. Verify that the repository is creation in **Success** state.
+7. Verify that the repository is created and is in **Success** state.
 ![veeam31](./images/veeam31.jpg)
 
-## Create Backup policy for Virtual Machines
-1. Move to **Getting started page** and **Create your first policy**
+## Create a Backup Policy for Virtual Machines
+1. Move to the **Getting started** page and **Create your first backup policy**.
 ![veeam32](./images/veeam32.jpg)
-2. Click on **+Add**
+2. Click on **+ Add**.
 ![veeam33](./images/veeam33.jpg)
-3. Click on **Policy Info** enter the **Name** and **Description** and click **Next**
+3. Click on **Policy Info** enter the **Name** and **Description** and click **Next**.
 ![veeam34](./images/veeam34.jpg)
-4. Select the **Azure Active Directory**, select the directory which is given in the azure and select the **Region**
+4. Select the **Azure Active Directory**, select the directory which is given in the Azure, and select the **Region**.
 ![veeam35](./images/veeam35.jpg)
-5. Select the  **All resource**
+5. Select the  **All resource**.
 ![veeam36](./images/veeam36.jpg)
-6. Select the **protect the following resources** and **Browse to select the specific resource from the global list**
+6. Select **Protect the following resources** and click on **Browse to select the specific resource from the global list...**
 ![veeam37](./images/veeam37.jpg)
-7. Select the checkbox for virtual machine and click on **ADD**
+7. Select the checkbox for the virtual machines and click on **ADD**.
 ![veeam38](./images/veeam38.jpg)
-8. Click on **APPLY**
+8. Click on **APPLY**.
 ![veeam39](./images/veeam39.jpg)
-9.Click on **Next**
+9. Click on **Next**.
 ![veeam40](./images/veeam40.jpg)
-10. Move to **Guest processing** and **Enable application aware snapshots** and click **Next**
+10. Move on to **Guest Processing**, turn on the **Enable application aware snapshots**, and click on **Next**.
 ![veeam41](./images/veeam41.jpg)
-11. Select the **Targets** and **Enable Backup:on** click **Next**
+11. Select the **Targets**, turn on the **Enable Backup**, and click **Next**.
 ![veeam42](./images/veeam42.jpg)
-12. Select the **Schedule**, **Daily Retension:On** and **Edit Daily Settings**
+12. Select the **Schedule**, turn on the **Daily Retension**, and **Edit Daily Settings**.
 ![veeam43](./images/veeam43.jpg)
-13. Select the **Repository** : **Azure Backup**, Click on **Apply** and Click **Next**
+13. Select the **Repository** : **AzureBackup**, click on **Apply**, and Click **Next**.
 ![veeam44](./images/veeam44.jpg)
-14. Select the **Settings** click **Next**
+14. Select **Settings** click on **Next**.
 ![veeam45](./images/veeam45.jpg)
-15. Select the **Cost Estimation** and review the cost estimation and click **Next**
+15. Select **Cost Estimation** and review it, once done click on **Next**.
 ![veeam46](./images/veeam46.jpg)
-16. Select the **Summary** and review the summary and click on **Finish**
+16. Select **Summary** and review it, once done click on **Finish**.
 ![veeam47](./images/veeam47.jpg)
-17. Select the **checkbox** for the priority and click on **Start**
+17. Select the **Checkbox** for the priority, and click on **Start**.
 ![veeam48](./images/veeam48.jpg)
-18. Verify that the backup and snapshot creation **success**
+18. Verify that the backup and snapshot creation is in **success** state.
 ![veeam49](./images/veeam49.jpg)
 
 ## Delete the Windows Virtual Machines
-1. Login to the Azure Portal Using the credentials given in the Environment details.
-2. Search for the Virtual Machine in search tab select the  **Veeamwindows** VM and **Delete**.
+1. Log in to the Azure Portal Using the credentials given in the Environment details.
+2. Search for the Virtual Machine in the search tab and select the  **Veeamwindows** VM and **Delete**.
 ![veeam50](./images/veeam50.jpg)
-3. Select the **Veeamwindows** and check the checkbox for Confirmation and click **delete**
+3. Select the **Veeamwindows** and check the checkbox for Confirmation and click **delete**.
 ![veeam51](./images/veeam51.jpg)
 
 ## Restoring the Windows Virtual Machine
-1. Select **Protected data** and select the restore point of the Windows VM
+1. Select **Protected data** and select the restore point of the Windows VM.
 ![veeam52](./images/veeam52.jpg)
-2. Select **Restore** and then **Restore VM**
+2. Select **Restore** and click on **Restore VM**.
 ![veeam54](./images/Veeam54.jpg)
-3. Select **VeeamWindows** and Click **Next**
+3. Select **VeeamWindows** and click on **Next**.
 ![veeam55](./images/veeam55.jpg)
-4. Goto **Account**, **Select Account**, and **Select Azure Active Directory**, Click **Apply** and Click **Next**.
+4. Go to the **Account**, **Select Account**, and **Select Azure Active Directory**. Once done, click on **Apply** and click **Next**.
 ![veeam56](./images/veeam56.jpg)
-5. Go to **Restore Mode** and select the **Restore to Original Location** and click **Next**
+5. Go to the **Restore Mode** and select the **Restore to Original Location** and click on **Next**.
 ![veeam57](./images/veeam57.jpg)
-6. Go to **Reason** provide the **Restore Reason** and click **Next**
+6. Go to **Reason** provide the **Restore Reason** and click **Next**.
 ![veeam58](./images/Veeam58.jpg) 
-7. Go to **Summary** and read through the Description and Click on **Restore**
+7. Go to **Summary** and read through the description and click on **Restore**.
 ![veeam59](./images/veeam59.jpg)
-8. Go to Session Logs and verify that restore is in success state and Verify In the Azure Portal
+8. Go to the **Session Log** and verify that restore is in success state and Verify In the Azure Portal.
 ![veeam60](./images/veeam60.jpg)
 
 ## Azure SQL Backup
-1. Move to **Policies**, select the **Azure SQL** and **ADD+**
+1. Move to **Policies**, select the **Azure SQL** and **ADD+**.
 ![Veeam61](./images/Veeam61.jpg)
-2. Go to **PolicyInfo** Enter Value For **Name** and **Description** and Click **Next**
+2. Go to **PolicyInfo** Enter Value For **Name** and **Description** and Click **Next**.
 ![veeam62](./images/veeam62.jpg)
-3. Select the **Sources** Select the **Azure Active Directory** for the Source in the Region select **select region**
+3. Select the **Sources** Select the **Azure Active Directory** for the Source in the Region select **select region**.
 ![veeam63](./images/veeam63.jpg)
-4. Select the **Region** and click on **ADD** and click on **Apply**
+4. Select the **Region** and click on **ADD** and click on **Apply**.
 ![veeam64](./images/veeam64.jpg)
-5. Select the **Resource to Protect**, Clink on **protect the following resources** and **Select Browse to select the specifid resource from global list**
+5. Click on **Select resources to protect**, select **Protect the following resources** and click on **Browse to select the specific resource from global list**.
 ![veeam65](./images/veeam65.jpg)
 ![veeam66](./images/veeam66.jpg)
-6.Select the checkbox for the **VeeamSQL** and click on **ADD**, Click on **Apply** and click on **Next**
+6.Select the checkbox for the **VeeamSQL** and click on **ADD**, click on **Apply** and then **Next**.
 ![veeam67](./images/veeam67.jpg)
-7.Select the **Processing Options**, move to **Use staging servers (recommended for database consistency)** and Click on **select server**
+7.Select the **Processing Options**, move to **Use staging servers (recommended for database consistency)**, and click on **select server**.
 ![veeam68](./images/veeam68.jpg)
-8. Select the **Browse** option for **Staging server** and click on **+ADD** for adding SQL account
+8. Select the **Browse** option for **Staging server**, and click on **+ ADD** for adding SQL account.
 ![veeam69](./images/veeam69.jpg)
-9. Select the **AccountInfo** enter the **Name** and **Description** and click on **Next**
+9. Select the **AccountInfo** enter the **Name** and **Description** and click on **Next**.
 ![veeam70](./images/veeam70.jpg)
-10. Select the Account Enter the **Username** ,**Password** and click **Next**
+10. Select the Account and enter **Username** ,**Password** and click on **Next**.
 ![veeam71](./images/veeam71.jpg)
-11. Move to **Summary** and click **Next**
+11. Move to **Summary** and click **Next**.
 ![veeam72](./images/veeam72.jpg)
-12. Select **Apply** and click **Next**
+12. Select **Apply** and click **Next**.
 ![veeam73](./images/veeam73.jpg)
-13. Select **Schedule**, Enable radio button for **Daily retention** and **Edit Daily Settings**
+13. Select **Schedule**, enable the radio button for **Daily retention** and **Edit Daily Settings**.
 ![veeam74](./images/veeam74.jpg)
-14. Select **Repository** for AzureBackup, Click **Apply**  and click **Next**
+14. Select **Repository** for AzureBackup, click on **Apply** and click **Next**.
 ![veeam75](./images/veeam75.jpg)
-15. Goto **Settings** and click **Next**
+15. Go to **Settings** and click on **Next**.
 ![veeam76](./images/veeam76.jpg)
-16. Move **Cost Estimation** and click **Next**
+16. Move **Cost Estimation** and click on **Next**.
 ![veeam77](./images/veeam77.jpg)
-17. Move **Summary** and click **Finish**
+17. Move to **Summary** and click on **Finish**.
 ![veeam78](./images/veeam78.jpg)
-18. In the **policies**, click on **Azure SQl** and check the **priority**, Click on **Start**
+18. In the **Policies**, click on **Azure SQL** and check the **Priority** and click on **Start**.
 ![veeam79](./images/veeam79.jpg)
-19. Make sure that backup is **Success**
+19. Make sure that backup is in **Success** state.
 ![veeam81](./images/veeam81.jpg)
 
 ## Delete the SQL Database
-1. Move to Azure Portal Search for the **SQL database** and open the database which had **backup**.
+1. Move to the Azure Portal and Search for the **SQL database** and open the database which had **backup**.
 ![veeam83](./images/veeam83.jpg)
-2. Select the overview of **SQL Database** and click on **Delete**
+2. Select the overview of **SQL Database** and click on **Delete**.
 ![veeam84](./images/veeam84.jpg)
-3. **TYPE THE DATABASE NAME** and click on **Delete**
+3. **TYPE THE DATABASE NAME** and click on **Delete**.
 ![veeam85](./images/veeam85.jpg)
-**Note**:Wait untill deletion is success
+**Note**: Wait until deletion is success.
 
 ## Recovery of SQL Database
-1. Move to **protect data** ,select **Azure SQL**,Select the **checkbox for the Azure SQL** and Click on **restore** 
+1. Move to **Protect data**, select **Azure SQL** and select the **checkbox for the Azure SQL** and Click on **restore**.
 ![veeam82](./images/veeam82.jpg)
-2. Goto **Databases**, Select the **SQLdatabase** and Click on **Next**
+2. Go to the **Databases**, select the **SQLdatabase**, and click on **Next**.
 ![veeam86](./images/veeam86.jpg)
-3. Goto **Accounts**, **select the Account**, Select the Account given, click **Apply** and **Next**
+3. Go to **Account** and then **select the Account**. Select the Account on the right, click **Apply** and then **Next**.
 ![veeam87](./images/veeam87.jpg)
-4. Goto **Restore Mode**, select the checkbox for **Restore to the original location** and click **Next**
+4. Go to **Restore Mode**, select the checkbox for **Restore to the original location** and click on **Next**.
 ![veeam88](./images/veeam88.jpg)
-5. Goto **SQL Account**,select **Account**, click **Apply** and **Next**
+5. Go to **SQL Account**, select **Account**, click **Apply** and **Next**.
 ![veeam89](./images/veeam89.jpg)
-6. Goto **Reason**,**enter Reason** click **Next**
+6. Go to **Reason**,**enter Reason**, and click **Next**.
 ![veeam90](./images/veeam90.jpg)
-7. Select **Summary** click on **Restore**
+7. Select **Summary** and click on **Restore**.
 ![veeam91](./images/veeam91.jpg)
-8. Move to **session log** please verif that Restore is **Success**
+8. Move to the **Session log** and verify that the Restore is in **Success** state.
 ![veeam92](./images/veeam92.jpg)
 
 ## Recovery of files from Linux Virtual Machine.
-1. Move to **protected data**, Select **Virtual Machines**, Click on **Restore** and **file-level-recovery**
+1. Move to **Protected data**, select the **Virtual Machines**, click on **Restore** and select **file-level-recovery**.
 ![veeam93](./images/veeam93.jpg)
-2. Click on **Virtual Machine** click on **change restore point** select the restore point and **APPLY** Click **Next**
+2. Click on **Virtual Machine**, click on **change restore point** and select the restore point. Once done, click on **APPLY** and then **Next**.
 ![veeam94](./images/veeam94.jpg)
-3. Click on **Restore** enter **Restore reason** click **Next**
+3. Click on **Restore**, enter **Restore reason**, and click **Next**.
 ![veeam95](./images/veeam95.jpg)
-4. Click on **Summary** and click **Start**
+4. Click on **Summary** and click **Start**.
 ![veeam96](./images/veeam96.jpg)
-5. Move to **Protected Data**, select the **Virtual machine**, Select **File-Level-Recovery** and click on **FLR**
+5. Move to **Protected Data**, select the **Virtual machine**, select **File-Level-Recovery** and click on **FLR**.
 ![veeam97](./images/veeam97.jpg)
-6. Select the **URL** and open in the **New Browser**
+6. Select the **URL** and open in a **New Browser**.
 ![veeam98](./images/veeam98.jpg)
-Note: If you prompted with the **connection is not private** then click on **Advance** and click on **continue to**
+Note: If you prompted with the **Connection is not private** then click on **Advance** and click on **continue to**.
  ![veeam99](./images/veeam99.jpg)
- 7. Select the proper file and folder and click on **+Add to restore list**
+ 7. Select the proper file and folder and click on **+ Add to restore list**.
  ![veeam100](./images/veeam100.jpg)
- 8. Move to **Restore List**, Select the file which you want to download and click on **Download**
+ 8. Move to **Restore List**, select the file which you want to download, and click on **Download**.
  ![veeam101](./images/veeam101.jpg)
 
 ## Backup of Azure Files
 1. Navigate to **Policies > Azure Files** and Click **Add**.
 ![veeam110](./images/veeam110.jpg)
-2. Provide the **Name** and **Discripition** for **Info**
+2. Provide the **Name** and **Description** for **Info**.
 ![veeam111](./images/veeam111.jpg)
-3. Go to the **sources** and In the **Account** section select the **Configure account** and select the **Azure Active Dierctory** and Select the **ResourceGroup Region**
+3. Go to the **Sources** and In the **Account** section select the **Configure account** and select the **Azure Active Dierctory** and Select the **ResourceGroup Region**.
 ![veeam112](./images/veeam112.jpg)
-4. Click on **Resource to protect** and select the **File Share**, Click on **Apply** and Click **Next**. 
+4. Click on **Resource to protect** and select the **File Share**, click on **Apply** and click **Next**. 
 ![veeam113](./images/veeam113.jpg)
-5. Move to **Schedule** and enable the **Daily Retension**
+5. Move to **Schedule** and enable the **Daily Retention**.
 ![veeam114](./images/veeam114.jpg)
-6. Move to **Settings** and Click on **Next**
+6. Move to **Settings** and click on **Next**.
 ![veeam115](./images/veeam115.jpg)
-7. Move to **cost estimation** review **cost estimation** and click on **Next**
+7. Move to **Cost estimation** review it and click on **Next**.
 ![veeam116](./images/veeam116.jpg)
-8. Move to **Summary** and Click on **Finish**
+8. Move to **Summary** and click on **Finish**.
 ![veeam117](./images/veeam117.jpg)
-9. Move to **Policies**, Click on **Azure Files**, Check the **Priority** box and Click on **Start**
+9. Move to **Policies**, click on **Azure Files**, check the **Priority** box, and Click on **Start**.
 ![veeam118](./images/veeam118.jpg)
-10. Make Sure that Snapshot creation is **success**
+10. Make Sure that Snapshot creation is in **Success** state.
 ![veeam119](./images/veeam119.jpg)
 
-## Recovey of Azure Files
-1. Move to **Protect Data**,click on **Azure Files**, Check **Priority**, click on **Restore** and **File-Level Restore**
+## Recovery of Azure Files
+1. Move to **Protect Data**, click on **Azure Files**, check **Priority**, click on **Restore**, and **File-Level Restore**.
 ![veeam120](./images/veeam120.jpg)
-2. Click on **Account**, Select **Account*** and Click **Apply** and **Next**
+2. Click on **Account**, select **Account***, click on **Apply** and **Next**.
 ![veeam121](./images/veeam121.jpg)
-3. Move to **Restore Mode**, Restore to **Original Location** and click **Next**
+3. Move to **Restore Mode**, restore to **Original Location**, and click **Next**.
 ![veeam122](./images/veeam122.jpg)
-4.Move to the **Reason**,Enter **Reson** and Click **Next**
+4.Move to the **Reason**, type the **Reason** and click **Next**.
 ![veeam123](./images/veeam123.jpg)
-5. Move to **summary** and Click on **Finish**
+5. Move to **Summary** and click on **Finish**.
 ![veeam124](./images/veeam124.jpg)
-6. Move to **Protected Data**, Click on **Azure Files** and Click on **FLR**
+6. Move to **Protected Data**, click on **Azure Files**, and click on **FLR**.
 ![veeam129](./images/veeam129.jpg)
-7. Click on the URL it will redirect to the another Tab.
+7. Click on the URL it will redirect to another Tab.
 ![veeam130](./images/veeam130.jpg)
-8. Select the **files** and click on **Add to Restore**
+8. Select the **files** and click on **Add to Restore**.
 ![veeam131](./images/veeam131.jpg)
-9. Select the **Restore list**,click on the check box of file, click on **restore** and click on **keep**.
+9. Select the **Restore list**, click on the check box of file, click on **restore**, and click on **keep**.
 ![veeam132](./images/veeam132.jpg)
